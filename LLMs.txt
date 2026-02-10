@@ -1,0 +1,344 @@
+HISTORIA DE DESARROLLO - SIMULADOR DE MODULACIÓN DIGITAL
+PROYECTO: APLICACIONES WEB - PROYECTO FINAL
+
+Universidad: Universidad de Oriente
+Facultad: Ingenierías en Telecomunicaciones, Informática y Biomédica
+Autores: Alejandro Marrero Rojas y Sheyla Romy Lara Batista
+Fecha de desarrollo: Febrero 2026
+ITERACIÓN 1: KIMI AI (Febrero 2026)
+
+PROMPT INICIAL:
+"Necesito crear un simulador web interactivo para modulación digital que incluya ASK, FSK, PSK y QAM. Debe tener:
+
+    Panel de controles con entrada binaria, selector de modulación y parámetros ajustables
+
+    Visualización en tiempo real de la señal modulada
+
+    Diagrama de constelación
+
+    Diseño profesional y responsive
+
+    Información educativa sobre cada modulación
+
+    Desarrollado en HTML, CSS y JavaScript puro"
+
+RESULTADO DE KIMI:
+
+    Código HTML básico con estructura simple
+
+    Canvas implementado pero con gráficos básicos
+
+    Diseño CSS minimalista sin temas profesionales
+
+    Funcionalidad limitada de JavaScript
+
+    Faltaban controles deslizantes y validación
+
+    PROBLEMA: Interfaz poco atractiva, sin animaciones, código desorganizado
+
+ITERACIÓN 2: CANVA AI (Febrero 2026)
+
+PROMPT MEJORADO:
+"Basándome en el código de Kimi, necesito mejorarlo significativamente:
+
+    Agregar sistema de controles deslizantes (sliders) para frecuencia, bitrate y amplitud
+
+    Implementar validación de entrada binaria
+
+    Mejorar los gráficos del canvas con rejillas y etiquetas
+
+    Añadir botones de 'Aleatorio' y 'Validar'
+
+    Crear animación de simulación en tiempo real
+
+    Diseño más profesional con gradientes y sombras"
+
+RESULTADO DE CANVA:
+
+    Mejoró el diseño visual con algunos gradientes
+
+    Agregó controles deslizantes funcionales
+
+    Implementó validación básica de entrada
+
+    PROBLEMA: Código CSS desorganizado, animaciones poco fluidas, diagrama de constelación incorrecto para QAM, no responsive en móviles
+
+ITERACIÓN 3: QWEN AI (Febrero 2026)
+
+PROMPT ESPECÍFICO:
+"El código de Canva tiene problemas de rendimiento y organización. Necesito:
+
+    Reestructurar todo el CSS usando metodología BEM
+
+    Optimizar las funciones de dibujo del canvas para mejor rendimiento
+
+    Corregir el diagrama de constelación - los puntos de QAM están mal ubicados
+
+    Agregar sistema de grid CSS para layout responsive
+
+    Implementar requestAnimationFrame para animaciones suaves
+
+    Separar el código en secciones lógicas con comentarios detallados"
+
+RESULTADO DE QWEN:
+
+    Código mejor estructurado con secciones claras
+
+    Constelación de QAM corregida con 4 puntos correctos
+
+    Sistema de grid implementado
+
+    PROBLEMA: Colores poco atractivos, sin coherencia visual, falta de detalles en UX, código JavaScript demasiado complejo y difícil de mantener
+
+ITERACIÓN 4: DEEPSEEK (VERSIÓN FINAL - Febrero 2026)
+
+PROMPT COMPLETO Y DEFINITIVO:
+"Después de probar Kimi, Canva y Qwen, necesito la versión definitiva que combine lo mejor de cada una. Voy a ser muy específico:
+
+    DISEÑO VISUAL:
+
+        Tema oscuro profesional con azules y verdes (#0a192f, #64ffda)
+
+        Gradientes sutiles y sombras elegantes
+
+        Iconos Font Awesome en todos los controles
+
+        Efectos hover y transiciones suaves
+
+        Border-radius consistentes de 10-15px
+
+    ESTRUCTURA HTML:
+
+        Header con título y descripción del proyecto
+
+        Layout principal de 2 columnas (controles | visualización)
+
+        Footer con información académica
+
+        Sistema de grid CSS para responsive design
+
+        HTML semántico bien estructurado
+
+    CONTROLES INTERACTIVOS:
+
+        Input de texto para secuencia binaria (max 16 bits)
+
+        Selector de modulación con colores por tipo
+
+        3 sliders personalizados (frecuencia, bitrate, amplitud)
+
+        Display de valores junto a cada slider
+
+        Botones: Aleatorio, Validar, Iniciar/Pausar, Reiniciar
+
+        Validación en tiempo real con cambio de color de borde
+
+    VISUALIZACIONES:
+
+        CANVAS 1: Señal temporal con:
+
+            Rejilla de referencia
+
+            Ejes etiquetados
+
+            Separadores de bits con etiquetas
+
+            Color de línea según modulación
+
+        CANVAS 2: Diagrama de constelación con:
+
+            Círculos concéntricos
+
+            Ejes I y Q etiquetados
+
+            Puntos correctos para PSK y QAM
+
+            Mensaje informativo para ASK/FSK
+
+    INFORMACIÓN EDUCATIVA:
+
+        Panel con: Tipo actual, Descripción, Fórmula matemática
+
+        Textos específicos para cada modulación
+
+        Colores coherentes con el selector
+
+    JAVASCRIPT:
+
+        Variables globales claramente definidas
+
+        Objeto modulationData con toda la información
+
+        Funciones separadas: dibujo, utilidades, eventos
+
+        Sistema de animación con requestAnimationFrame
+
+        Actualización en tiempo real de todas las visualizaciones
+
+        Event listeners para todos los controles
+
+    RESPONSIVE DESIGN:
+
+        Desktop: 2 columnas
+
+        Tablet: 1 columna, 2 canvas apilados
+
+        Móvil: 1 columna, controles reordenados
+
+    EXTRAS:
+
+        Efectos de sombra en todos los contenedores
+
+        Focus states accesibles
+
+        Tooltips implícitos
+
+        Animación de simulación que varía la frecuencia
+
+        Reset a valores por defecto
+
+    CONTENIDO ACADÉMICO:
+
+        Universidad de Oriente
+
+        Facultad específica
+
+        Nombres de autores (Alejandro Marrero Rojas y Sheyla Romy Lara Batista)
+
+        Año 2026
+
+        Tecnologías usadas (HTML5, CSS3, JavaScript)
+
+POR FAVOR, genera el código completo en un solo archivo HTML con todo integrado, bien comentado y organizado. Esta será la versión final del proyecto."
+
+RESULTADO FINAL DE DEEPSEEK:
+LOGROS PRINCIPALES:
+
+    DISEÑO PROFESIONAL:
+
+        Paleta de colores cohesiva (#0a192f, #64ffda, #112240)
+
+        Gradientes elegantes y sombras consistentes
+
+        Iconografía completa con Font Awesome
+
+        Efectos visuales profesionales
+
+    FUNCIONALIDAD COMPLETA:
+
+        Los 4 tipos de modulación perfectamente implementados
+
+        Controles interactivos completamente funcionales
+
+        Visualizaciones precisas y detalladas
+
+        Sistema de animación fluido
+
+    CÓDIGO BIEN ESTRUCTURADO:
+
+        CSS organizado por secciones lógicas
+
+        JavaScript modular con funciones específicas
+
+        Comentarios detallados en cada sección
+
+        Fácil de mantener y extender
+
+    EXPERIENCIA DE USUARIO:
+
+        Responsive en todos los dispositivos
+
+        Feedback visual inmediato
+
+        Validación de entrada inteligente
+
+        Información educativa contextual
+
+    DETALLES ACADÉMICOS:
+
+        Créditos completos de autores
+
+        Información institucional correcta
+
+        Fórmulas matemáticas precisas
+
+        Descripciones técnicas exactas
+
+DECISIÓN FINAL: ¿POR QUÉ DEEPSEEK?
+
+Después de probar 4 diferentes LLMs, seleccioné la versión de DeepSeek por las siguientes razones:
+
+VENTAJAS COMPARATIVAS:
+
+Kimi: Diseño básico, código desordenado, funcionalidad limitada, no responsive
+Canva: Diseño regular, código mejorable, funcionalidad completa, responsive parcial
+Qwen: Diseño funcional, código bueno, funcionalidad completa, responsive completo
+DeepSeek: Diseño excelente, código excelente, funcionalidad completa+, responsive perfecto
+
+PUNTOS DIFERENCIALES DE DEEPSEEK:
+
+    COHERENCIA VISUAL: Paleta de colores perfectamente coordinada
+
+    ATENCIÓN AL DETALLE: Sombras, bordes redondeados, iconos, hover effects
+
+    ORGANIZACIÓN DEL CÓDIGO: Secciones claras, comentarios útiles
+
+    PERFORMANCE: Uso eficiente de requestAnimationFrame
+
+    COMPLETITUD: Nada dejado al azar, todo bien implementado
+
+    PROFESIONALISMO: Aspecto final de aplicación comercial
+
+MÉTRICAS DE CALIDAD:
+
+    Líneas de código: 680 líneas bien organizadas
+
+    Tiempo de carga: < 2 segundos
+
+    Compatibilidad: Chrome, Firefox, Safari, Edge
+
+    Puntuación Lighthouse: ~95/100 estimado
+
+    Mantenibilidad: Alta (código bien estructurado)
+
+PROCESO DE PERSONALIZACIÓN FINAL
+
+Después de recibir el código de DeepSeek, realicé las siguientes personalizaciones:
+
+    Añadí los nombres de autores en header y footer
+
+    Ajusté colores institucionales para coincidir con la Universidad
+
+    Verifiqué todas las fórmulas matemáticas con el material del curso
+
+    Probé exhaustivamente en diferentes dispositivos
+
+    Documenté el proceso completo en este archivo
+
+APRENDIZAJES DEL PROCESO:
+
+    La especificidad del prompt es crucial - cuanto más detallado, mejor el resultado
+
+    Iterar entre diferentes LLMs puede generar mejores soluciones
+
+    DeepSeek sobresale en proyectos web completos y bien diseñados
+
+    La organización del código es tan importante como la funcionalidad
+
+    Los pequeños detalles de UX marcan la diferencia profesional
+
+CONCLUSIÓN
+
+La versión final desarrollada con DeepSeek superó todas las expectativas, combinando:
+
+    Diseño visual atractivo y profesional
+
+    Funcionalidad completa y bien implementada
+
+    Responsive design perfecto
+
+    Contenido académico preciso
+
+    Código limpio y bien documentado
+
+Este proyecto demuestra cómo el uso estratégico de diferentes LLMs, culminando con DeepSeek, puede producir resultados de calidad profesional para proyectos académicos y aplicaciones web reales.
